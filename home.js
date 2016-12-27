@@ -7,9 +7,9 @@ function redirect() {
 window.fbAsyncInit = function() {
             // The SDK is loaded so let's init it.
             FB.init({
-                        appId : '311856185874949',
+                        appId : '1130006373787712',
                         xfbml : true,
-                        version : 'v2.1'
+                        version : 'v2.8'
             });
             // We check the user's login status
             FB.getLoginStatus(function(response) {
