@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Word Game</title>
+<link rel="stylesheet" type="text/css" href="home.css">
+<style type="text/css">
+	#imgcanvas{
+		width: 800px;
+		height: 500px;
+		border-radius: 20px;
+	}
+	.button {
+	  display: inline-block;
+	  padding: 15px 25px;
+	  font-size: 24px;
+	  cursor: pointer;
+	  text-align: center;
+	  text-decoration: none;
+	  outline: none;
+	  color: #fff;
+	  background-color: #4CAF50;
+	  border: none;
+	  border-radius: 15px;
+	}
+
+	.button:hover {background-color: #3e8e41}
+
+	.button:active {
+	  background-color: #3e8e41;
+	  box-shadow: 0 5px #666;
+	  transform: translateY(4px);
+	}
+</style>
+<script type="text/javascript">
+	function displayImage(){
+	    var num = Math.floor((Math.random() * 27) + 1);
+	    path = "images/"+num+".jpg";
+	    document.canvas.src = path;
+	}
+</script>
+</head>
+<body onload="displayImage();">
+<span class="wordart" title="Most Romantic Word Between You and Your Soulmate!!">Most Romantic Word Between You and Your Soulmate!!</span>
+<div>
+    <img src="" name="canvas" id="imgcanvas" />
+    <br/>
+    <input onclick="displayImage();" type=button class="button" value="try Again">
+</div>
+</body>
+</html>
