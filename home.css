@@ -299,9 +299,8 @@
 /* @group Perfect Typography */
 
 .perfect {
-    color: #f00;
-    font: 72px/20px "Comic Sans MS", "Comic Sans", "Chalkboard", cursive;
-    
+    color: red;
+    font: 45px "Comic Sans MS", "Comic Sans", "Chalkboard", cursive;
     letter-spacing: -2px;    
 }
  
